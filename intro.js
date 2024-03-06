@@ -1,9 +1,9 @@
 let header = document.querySelector('#intro');
 let anim = [
-    { t: "\n", ms: 300 },
-    { t: "_", ms: 300 },
-    { t: "\n", ms: 300 },
-    { t: "_", ms: 200 },
+    { t: "\n", ms: 400 },
+    { t: "_", ms: 400 },
+    { t: "\n", ms: 400 },
+    { t: "_", ms: 400 },
     { t: "S_", ms: 100 },
     { t: "SE_", ms: 100 },
     { t: "SEA_", ms: 100 },
@@ -13,10 +13,10 @@ let anim = [
     { t: "SEAN DR_", ms: 100 },
     { t: "SEAN DRO_", ms: 100 },
     { t: "SEAN DROL_", ms: 100 },
-    { t: "SEAN DROLL_", ms: 200 },
-    { t: "SEAN DROLL", ms: 200 },
-    { t: "SEAN DROLL_", ms: 200 },
-    { t: "SEAN DROLL", ms: 200 }
+    { t: "SEAN DROLL_", ms: 400 },
+    { t: "SEAN DROLL ", ms: 400 },
+    { t: "SEAN DROLL_", ms: 400 },
+    { t: "SEAN DROLL", ms: 400 }
 ];
 let stepDenominator = 1;
 if (window.localStorage.stepDenominator)
