@@ -14,9 +14,9 @@ let anim = [
     { t: "SEAN DRO_", ms: 100 },
     { t: "SEAN DROL_", ms: 100 },
     { t: "SEAN DROLL_", ms: 400 },
-    { t: "SEAN DROLL ", ms: 400 },
+    { t: "SEAN DROLL  ", ms: 400 },
     { t: "SEAN DROLL_", ms: 400 },
-    { t: "SEAN DROLL", ms: 400 }
+    { t: "SEAN DROLL  ", ms: 400 }
 ];
 let stepDenominator = 1;
 if (window.localStorage.stepDenominator)
@@ -30,9 +30,8 @@ let update = () => {
     if (i < anim.length)
         setTimeout(update, step.ms / stepDenominator);
     else {
-        header.classList.add('top');
         setTimeout(() => {
-            document.getElementById('main').style.opacity = 1;
+            document.getElementById("main").style.opacity = 1;
         }, 500);
         window.localStorage.stepDenominator = 2;
     }

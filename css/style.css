@@ -1,0 +1,120 @@
+
+body {
+    background-color: #030918;
+    color: white;
+    font-family: Tahoma;
+    font-size: 16px;
+    overflow: hidden;
+
+		
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+}
+
+header {
+	position: relative;
+	display: flex;
+	justify-content: center;
+}
+
+.button {
+	cursor: pointer;
+}
+
+.nav_item {
+	display: inline-block;
+	margin-left: 1em;
+	margin-right: 1em;
+}
+
+.underline {
+	display: block;
+	height: 2px;
+	margin: 0 auto;
+	width: 0;
+	transition: width .25s linear;
+  background-color: aliceblue;
+}
+
+.button:hover>.underline, .button.active>.underline {
+	width: 100%;
+}
+
+.content_panel {
+	position: relative;
+	display: inline-block;
+	min-width: 100vw;
+}
+
+.boxed {
+	display: inline-block;
+	border: 2px solid white;
+  border-radius: 10px;
+	word-wrap: break-word;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.item {
+	position: absolute;
+	opacity: 0;
+	transition: opacity 0.5s linear;
+	z-index: -100;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.shown {
+	opacity: 1;
+	z-index: 100;
+}
+
+.h_box {
+	display: flex;
+	align-items: stretch;
+	gap: 1.5em;
+	width: fit-content;
+}
+
+.project_list {
+	display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.vertical_divider {
+	width: 2px;
+	background: white;
+}
+
+.description_container {
+	position: relative;
+	justify-content: left;
+	text-align: left;
+	width: 350px;
+}
+
+.description_container .item {
+	left: 0;
+	transform: none;
+}
+
+.project_list p {
+	width: fit-content;
+	white-space: nowrap;
+}
+
+#main {
+	opacity: 0;
+	transition: 0.5s;
+}
+
+#intro {
+	color: white;
+	transition: 0.5s ease-in-out;
+	text-align: center;
+	transform: translateX(-.25em);
+	white-space: pre;
+}
